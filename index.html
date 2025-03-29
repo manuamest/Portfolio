@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manuel Amestoy | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/home/manuamest/Documentos/misRepos/portfolio/img/favicon.png">
+</head>
+<body class="dark-theme">
+    <div class="particles-container" id="particles-js"></div>
+    
+    <header>
+        <div class="container">
+            <div class="logo">MA</div>
+            <nav>
+                <ul>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" class="icon"><i class="fas fa-laptop-code"></i></a></li>
+                </ul>
+            </nav>
+            <div class="available">
+                <span>Available for work</span>
+            </div>
+            <div class="theme-switcher">
+                <button id="theme-light" title="Light Theme"><i class="fas fa-sun"></i></button>
+                <button id="theme-dark" title="Dark Theme" class="active"><i class="fas fa-moon"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hey, I'm <span class="gradient-text">Manu Amestoy</span></h1>
+                <h2><span class="experience-counter">0 months</span> <span class="title">Software Engineer & AI Specialist</span></h2>
+                <p>From Galicia, Spain <span class="flag">🇪🇸</span>. Specialized in AI development and computer vision solutions.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary"><i class="fas fa-envelope"></i> Contact Me</a>
+                    <a href="https://www.linkedin.com/in/jose-manuel-amestoy-l%C3%B3pez-5a849629a/" class="btn btn-secondary" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/manuamest" class="btn btn-secondary" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-img-container">
+                    <div class="profile-img">
+                        <img src="img/profile2.png" alt="Profile photo" loading="eager" fetchpriority="high">
+                    </div>
+                    <div class="neural-network">
+                        <div class="node node-1"></div>
+                        <div class="node node-2"></div>
+                        <div class="node node-3"></div>
+                        <div class="node node-4"></div>
+                        <div class="node node-5"></div>
+                        <div class="node node-6"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-briefcase"></i>
+                <h2>Work Experience</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>AI Developer</h3>
+                        <h4>CINFO Company</h4>
+                        <span class="date">July 2024 - Present</span>
+                        <p>Working on cutting-edge AI solutions and computer vision applications. Implementing machine learning models and developing computer vision algorithms for real-world business challenges.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Computer Engineering</h3>
+                        <h4>Universidade da Coruña</h4>
+                        <span class="date">2020 - 2024</span>
+                        <p>Major in Computing. Specialized in Software Development, Algorithms, Databases, Networks, Artificial Intelligence, Cybersecurity, LLM.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-trophy"></i>
+                <h2>Achievements</h2>
+            </div>
+            
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>HackUDC 2025 Winner</h3>
+                        <p>First prize in the Denodo challenge at HackUDC 2025. Developed an innovative solution with my team that stood out among all participants.</p>
+                        <a href="https://github.com/manuamest/HackUDC2025-Denodo" class="btn-link" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                
+                <div class="achievement-card coming-soon">
+                    <div class="achievement-icon">
+                        <i class="fas fa-hourglass-half"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Coming Soon</h3>
+                        <p>More achievements will be added here as my career progresses. Stay tuned for updates about competitions, recognitions, and projects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-code"></i>
+                <h2>Projects</h2>
+            </div>
+            
+            <h3 class="project-category">Main Projects</h3>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/dicomviewer.png" alt="DICOM Viewer">
+                    </div>
+                    <div class="project-content">
+                        <h3>Medical Record Visualization System in AR</h3>
+                        <p>TFG: Development of a system for visualizing medical records in augmented reality for HoloLens 2, improving access and comprehension of medical data.</p>
+                        <div class="project-tags">
+                            <span>Augmented Reality</span>
+                            <span>HoloLens 2</span>
+                            <span>Unity</span>
+                            <span>DICOM</span>
+                            <span>C#</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://ruc.udc.es/dspace/handle/2183/39622" class="btn btn-secondary" target="_blank">Research <i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/manuamest/DICOMVIEWER" class="btn btn-secondary" target="_blank">Repository <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/taseapp.png" alt="Property Valuation App">
+                    </div>
+                    <div class="project-content">
+                        <h3>Property Valuation App</h3>
+                        <p>Developing an application for real estate valuation using AI to predict property values based on multiple factors and market trends (private code).</p>
+                        <div class="project-tags">
+                            <span>Svelte</span>
+                            <span>APIs</span>
+                            <span>Real Estate</span>
+                        </div>
+                        <a href="https://github.com/manuamest/tase-app-a7" class="btn btn-secondary" target="_blank">Repository <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/soccerimgdetector.png" alt="SoccerImgDetector">
+                    </div>
+                    <div class="project-content">
+                        <h3>SoccerImgDetector</h3>
+                        <p>Project that uses Computer Vision to detect elements in soccer: playing field, boundary lines, ball, players, and referee.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Computer Vision</span>
+                            <span>OpenCV</span>
+                        </div>
+                        <a href="https://github.com/manuamest/SoccerImgDetector" class="btn btn-secondary" target="_blank">Repository <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="project-category">Hackathon Projects</h3>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/hackudc2025.png" alt="HackUDC 2025">
+                    </div>
+                    <div class="project-content">
+                        <h3>HackUDC 2025 - Denodo</h3>
+                        <p>First prize-winning project at HackUDC 2025, developing an innovative solution for the Denodo challenge with a team of talented developers.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>JavaScript</span>
+                            <span>Team Project</span>
+                        </div>
+                        <a href="https://github.com/manuamest/HackUDC2025-Denodo" class="btn btn-secondary" target="_blank">Repository <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/hackupc2024.png" alt="HackUPC 2024">
+                    </div>
+                    <div class="project-content">
+                        <h3>HackUPC 2024 - Inditex</h3>
+                        <p>Scripts for two implementations, AI and Computer Vision for similarity sorting based on an input image, developed in Python for HackUPC 2024.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>AI</span>
+                            <span>Computer Vision</span>
+                        </div>
+                        <a href="https://github.com/manuamest/HACKUPC2024-SCRIPTS" class="btn btn-secondary" target="_blank">Repository <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/hackudc2024.png" alt="HackUDC 2024">
+                    </div>
+                    <div class="project-content">
+                        <h3>HackUDC 2024 - CODEE</h3>
+                        <p>Python script for code analysis using Codee, accompanied by visualization generation and HTML report creation for the HackUDC 2024.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Code Analysis</span>
+                            <span>HTML</span>
+                        </div>
+                        <a href="https://github.com/manuamest/HACKUDC2024-CODEE" class="btn btn-secondary" target="_blank">Repository <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-me" class="about">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-user"></i>
+                <h2>About Me</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a Computer Engineer specialized in <strong>Artificial Intelligence (AI)</strong> and <strong>Computer Vision</strong>. My passion for technology and AI has led me to explore different areas within the field of computer science.</p>
+                    
+                    <p>I've worked on projects involving image classification, object detection, and pattern recognition using cutting-edge techniques and frameworks in computer vision.</p>
+                    
+                    <h3>Specialization Areas</h3>
+                    <ul>
+                        <li><i class="fas fa-robot"></i> <strong>Artificial Intelligence:</strong> Extensive exploration of machine learning, natural language processing, and computer vision.</li>
+                        <li><i class="fas fa-eye"></i> <strong>Computer Vision:</strong> Projects involving image classification, object detection, and pattern recognition.</li>
+                        <li><i class="fas fa-vr-cardboard"></i> <strong>Augmented Reality:</strong> Development of AR applications for medical visualization and interactive experiences.</li>
+                    </ul>
+                </div>
+                
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>C++</span>
+                        <span>Lm Studio</span>
+                        <span>TensorFlow</span>
+                        <span>PyTorch</span>
+                        <span>OpenCV</span>
+                        <span>Machine Learning</span>
+                        <span>Computer Vision</span>
+                        <span>Augmented Reality</span>
+                        <span>Unity</span>
+                        <span>Git</span>
+                        <span>GCP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-envelope"></i>
+                <h2>Contact</h2>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>amestoymanu@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h3>GitHub</h3>
+                            <p><a href="https://github.com/manuamest" target="_blank">manuamest</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <p><a href="https://www.linkedin.com/in/jose-manuel-amestoy-l%C3%B3pez-5a849629a/" target="_blank">José Manuel Amestoy López</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send me a message</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Manuel Amestoy. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/manuamest" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jose-manuel-amestoy-l%C3%B3pez-5a849629a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/manuamest/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html> 
