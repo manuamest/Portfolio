@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manuel Amestoy | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="assets/img/profile.webp" as="image" fetchpriority="high">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
 </head>
 <body class="dark-theme">
     <div class="particles-container" id="particles-js"></div>
-    
+
     <header>
         <div class="container">
             <nav>
@@ -20,16 +23,15 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#about-me">About me</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#" class="icon"><i class="fas fa-laptop-code"></i></a></li>
-                    <link rel="icon" type="image/png" href="img/favicon.png">
+                    <li><a href="#" class="icon" aria-label="Home"><i class="fas fa-laptop-code"></i></a></li>
                 </ul>
             </nav>
             <div class="available">
                 <span>Available for work</span>
             </div>
             <div class="theme-switcher">
-                <button id="theme-light" title="Light Theme"><i class="fas fa-sun"></i></button>
-                <button id="theme-dark" title="Dark Theme" class="active"><i class="fas fa-moon"></i></button>
+                <button id="theme-light" title="Light Theme" aria-label="Light Theme"><i class="fas fa-sun"></i></button>
+                <button id="theme-dark" title="Dark Theme" class="active" aria-label="Dark Theme"><i class="fas fa-moon"></i></button>
             </div>
         </div>
     </header>
@@ -42,14 +44,14 @@
                 <p>From Galicia, Spain <span class="flag">🇪🇸</span>. Specialized in AI development and computer vision solutions.</p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary"><i class="fas fa-envelope"></i> Contact Me</a>
-                    <a href="https://www.linkedin.com/in/jose-manuel-amestoy-l%C3%B3pez-5a849629a/" class="btn btn-secondary" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                    <a href="https://github.com/manuamest" class="btn btn-secondary" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/jose-manuel-amestoy-l%C3%B3pez-5a849629a/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/manuamest" class="btn btn-secondary" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
                 </div>
             </div>
             <div class="hero-image">
                 <div class="profile-img-container">
                     <div class="profile-img">
-                        <img src="img/profile2.png" alt="Profile photo" loading="eager" fetchpriority="high">
+                        <img src="assets/img/profile.webp" alt="Profile photo" width="600" height="600" loading="eager" fetchpriority="high">
                     </div>
                     <div class="neural-network">
                         <div class="node node-1"></div>
@@ -70,7 +72,7 @@
                 <i class="fas fa-briefcase"></i>
                 <h2>Work Experience</h2>
             </div>
-            
+
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
@@ -111,7 +113,7 @@
                 <i class="fas fa-trophy"></i>
                 <h2>Achievements</h2>
             </div>
-            
+
             <div class="achievements-grid">
                 <div class="achievement-card">
                     <div class="achievement-icon">
@@ -120,7 +122,7 @@
                     <div class="achievement-content">
                         <h3>HackUPC 2025 Winner</h3>
                         <p>First prize in the Inditex challenge at HackUPC 2025. Developed an web app for similarity sorting based on an input image and try on features.</p>
-                        <a href="https://github.com/manuamest/echolook" class="btn-link" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://github.com/manuamest/echolook" class="btn-link" target="_blank" rel="noopener noreferrer">View Project <i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <div class="achievement-card">
@@ -130,10 +132,10 @@
                     <div class="achievement-content">
                         <h3>HackUDC 2025 Winner</h3>
                         <p>First prize in the Denodo challenge at HackUDC 2025. Developed an innovative solution with my team that stood out among all participants.</p>
-                        <a href="https://github.com/manuamest/HackUDC2025-Denodo" class="btn-link" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://github.com/manuamest/HackUDC2025-Denodo" class="btn-link" target="_blank" rel="noopener noreferrer">View Project <i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="achievement-card coming-soon">
                     <div class="achievement-icon">
                         <i class="fas fa-hourglass-half"></i>
@@ -153,13 +155,13 @@
                 <i class="fas fa-code"></i>
                 <h2>Projects</h2>
             </div>
-            
+
             <h3 class="project-category">Main Projects</h3>
-            
+
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="img/dicomviewer.png" alt="DICOM Viewer">
+                        <img src="assets/img/dicomviewer.webp" alt="DICOM Viewer" width="800" height="450" loading="lazy" decoding="async">
                     </div>
                     <div class="project-content">
                         <h3>Medical Record Visualization System in AR</h3>
@@ -172,15 +174,15 @@
                             <span>C#</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://ruc.udc.es/dspace/handle/2183/39622" class="btn btn-secondary" target="_blank">Research <i class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/manuamest/DICOMVIEWER" class="btn btn-secondary" target="_blank">Repository <i class="fab fa-github"></i></a>
+                            <a href="https://ruc.udc.es/dspace/handle/2183/39622" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Research <i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/manuamest/DICOMVIEWER" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Repository <i class="fab fa-github"></i></a>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="img/taseapp.png" alt="Property Valuation App">
+                        <img src="assets/img/taseapp.webp" alt="Property Valuation App" width="800" height="450" loading="lazy" decoding="async">
                     </div>
                     <div class="project-content">
                         <h3>Property Valuation App</h3>
@@ -190,13 +192,13 @@
                             <span>APIs</span>
                             <span>Real Estate</span>
                         </div>
-                        <a href="https://github.com/manuamest/tase-app-a7" class="btn btn-secondary" target="_blank">Repository <i class="fab fa-github"></i></a>
+                        <a href="https://github.com/manuamest/tase-app-a7" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Repository <i class="fab fa-github"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="img/soccerimgdetector.png" alt="SoccerImgDetector">
+                        <img src="assets/img/soccerimgdetector.webp" alt="SoccerImgDetector" width="800" height="450" loading="lazy" decoding="async">
                     </div>
                     <div class="project-content">
                         <h3>SoccerImgDetector</h3>
@@ -206,17 +208,17 @@
                             <span>Computer Vision</span>
                             <span>OpenCV</span>
                         </div>
-                        <a href="https://github.com/manuamest/SoccerImgDetector" class="btn btn-secondary" target="_blank">Repository <i class="fab fa-github"></i></a>
+                        <a href="https://github.com/manuamest/SoccerImgDetector" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Repository <i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
-            
+
             <h3 class="project-category">Hackathon Projects</h3>
-            
+
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="img/hackupc2025.png" alt="HackUPC 2025">
+                        <img src="assets/img/hackupc2025.webp" alt="HackUPC 2025" width="800" height="450" loading="lazy" decoding="async">
                     </div>
                     <div class="project-content">
                         <h3>HackUPC 2025 - InditexTECH</h3>
@@ -226,12 +228,12 @@
                             <span>veo</span>
                             <span>Team Project</span>
                         </div>
-                        <a href="https://github.com/manuamest/HackUDC2025-Denodo" class="btn btn-secondary" target="_blank">Repository <i class="fab fa-github"></i></a>
+                        <a href="https://github.com/manuamest/HackUDC2025-Denodo" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Repository <i class="fab fa-github"></i></a>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="img/hackudc2025.png" alt="HackUDC 2025">
+                        <img src="assets/img/hackudc2025.webp" alt="HackUDC 2025" width="800" height="450" loading="lazy" decoding="async">
                     </div>
                     <div class="project-content">
                         <h3>HackUDC 2025 - Denodo</h3>
@@ -241,13 +243,13 @@
                             <span>JavaScript</span>
                             <span>Team Project</span>
                         </div>
-                        <a href="https://github.com/manuamest/HackUDC2025-Denodo" class="btn btn-secondary" target="_blank">Repository <i class="fab fa-github"></i></a>
+                        <a href="https://github.com/manuamest/HackUDC2025-Denodo" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Repository <i class="fab fa-github"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="img/hackupc2024.png" alt="HackUPC 2024">
+                        <img src="assets/img/hackupc2024.webp" alt="HackUPC 2024" width="800" height="450" loading="lazy" decoding="async">
                     </div>
                     <div class="project-content">
                         <h3>HackUPC 2024 - Inditex</h3>
@@ -257,13 +259,13 @@
                             <span>AI</span>
                             <span>Computer Vision</span>
                         </div>
-                        <a href="https://github.com/manuamest/HACKUPC2024-SCRIPTS" class="btn btn-secondary" target="_blank">Repository <i class="fab fa-github"></i></a>
+                        <a href="https://github.com/manuamest/HACKUPC2024-SCRIPTS" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Repository <i class="fab fa-github"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="img/hackudc2024.png" alt="HackUDC 2024">
+                        <img src="assets/img/hackudc2024.webp" alt="HackUDC 2024" width="800" height="450" loading="lazy" decoding="async">
                     </div>
                     <div class="project-content">
                         <h3>HackUDC 2024 - CODEE</h3>
@@ -273,7 +275,7 @@
                             <span>Code Analysis</span>
                             <span>HTML</span>
                         </div>
-                        <a href="https://github.com/manuamest/HACKUDC2024-CODEE" class="btn btn-secondary" target="_blank">Repository <i class="fab fa-github"></i></a>
+                        <a href="https://github.com/manuamest/HACKUDC2024-CODEE" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Repository <i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
@@ -286,13 +288,13 @@
                 <i class="fas fa-user"></i>
                 <h2>About Me</h2>
             </div>
-            
+
             <div class="about-content">
                 <div class="about-text">
                     <p>I'm a Computer Engineer specialized in <strong>Artificial Intelligence (AI)</strong> and <strong>Computer Vision</strong>. My passion for technology and AI has led me to explore different areas within the field of computer science.</p>
-                    
+
                     <p>I've worked on projects involving image classification, object detection, and pattern recognition using cutting-edge techniques and frameworks in computer vision.</p>
-                    
+
                     <h3>Specialization Areas</h3>
                     <ul>
                         <li><i class="fas fa-robot"></i> <strong>Artificial Intelligence:</strong> Extensive exploration of machine learning, natural language processing, and computer vision.</li>
@@ -300,7 +302,7 @@
                         <li><i class="fas fa-vr-cardboard"></i> <strong>Augmented Reality:</strong> Development of AR applications for medical visualization and interactive experiences.</li>
                     </ul>
                 </div>
-                
+
                 <div class="skills">
                     <h3>Skills</h3>
                     <div class="skill-tags">
@@ -328,7 +330,7 @@
                 <i class="fas fa-envelope"></i>
                 <h2>Contact</h2>
             </div>
-            
+
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
@@ -342,14 +344,14 @@
                         <i class="fab fa-github"></i>
                         <div>
                             <h3>GitHub</h3>
-                            <p><a href="https://github.com/manuamest" target="_blank">manuamest</a></p>
+                            <p><a href="https://github.com/manuamest" target="_blank" rel="noopener noreferrer">manuamest</a></p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fab fa-linkedin"></i>
                         <div>
                             <h3>LinkedIn</h3>
-                            <p><a href="https://www.linkedin.com/in/jose-manuel-amestoy-l%C3%B3pez-5a849629a/" target="_blank">José Manuel Amestoy López</a></p>
+                            <p><a href="https://www.linkedin.com/in/jose-manuel-amestoy-l%C3%B3pez-5a849629a/" target="_blank" rel="noopener noreferrer">José Manuel Amestoy López</a></p>
                         </div>
                     </div>
                 </div>
@@ -362,15 +364,15 @@
             <div class="footer-content">
                 <p>&copy; 2024 Manuel Amestoy. All rights reserved.</p>
                 <div class="social-links">
-                    <a href="https://github.com/manuamest" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/jose-manuel-amestoy-l%C3%B3pez-5a849629a/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/manuamest/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/manuamest" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jose-manuel-amestoy-l%C3%B3pez-5a849629a/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/manuamest/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
 </body>
-</html> 
+</html>

@@ -7,7 +7,6 @@ This repository contains the source code for my personal portfolio website, a mo
 - Modern design with gradients and visual effects
 - Interactive animations inspired by neural networks
 - AI-themed particle effects that respond to cursor movement
-- Interactive AI demonstration with neural networks, classification, and object detection
 - Sections for experience, achievements, projects, personal information, and contact
 - Fully responsive design for all devices
 - Visual effects related to AI and computer vision
@@ -17,9 +16,10 @@ This repository contains the source code for my personal portfolio website, a mo
 - HTML5
 - CSS3 (with variables, animations, and transformations)
 - Modern JavaScript
+- Google Fonts for typography
 - [Particles.js](https://vincentgarreau.com/particles.js/) for particle effects
 - Font Awesome for icons
-- Google Fonts for typography
+- Optimized WebP images for faster loading
 
 ## 📋 Project Structure
 
@@ -27,8 +27,12 @@ This repository contains the source code for my personal portfolio website, a mo
 portfolio/
 │
 ├── index.html          # Main site structure
-├── styles.css          # Visual styles and design
-├── main.js             # Interactive functionalities
+├── assets/
+│   ├── css/
+│   │   └── styles.css  # Visual styles and responsive design
+│   ├── js/
+│   │   └── main.js     # Interactive functionality
+│   └── img/            # Optimized images and favicon
 └── README.md           # Documentation
 ```
 
@@ -64,14 +68,11 @@ The site is fully adapted for different screen sizes:
 - Tablets
 - Mobile devices
 
-## ⚙️ Interactive AI Feature
+## ⚙️ Performance Notes
 
-The portfolio includes an interactive AI demonstration where you can:
-1. Visualize a neural network with animated nodes and connections
-2. Create a classification model by clicking to add data points
-3. Test an object detection simulation
-
-These features provide a hands-on demonstration of AI concepts.
+- Project images are lazy-loaded and served as WebP.
+- The hero image is preloaded because it is part of the first viewport.
+- Images were optimized while keeping the original icon set and particle background.
 
 ## 🤝 Contact
 
