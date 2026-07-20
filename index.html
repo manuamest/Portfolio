@@ -46,8 +46,8 @@
             <nav id="main-navigation" aria-label="Main navigation">
                 <ul>
                     <li><a href="#impact">Impact</a></li>
-                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#capabilities">Capabilities</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -105,17 +105,15 @@
                     <strong class="experience-counter">2 years</strong>
                     <span>building professional AI systems</span>
                 </li>
-                <li class="proof-item accent-proof">
-                    <strong>~87%</strong>
-                    <span>faster validation workflow</span>
-                </li>
-                <li class="proof-item">
-                    <strong>2×</strong>
+                <li class="proof-item hackathon-proof">
+                    <strong><i class="fas fa-trophy" aria-hidden="true"></i> 2x</strong>
                     <span>first-prize hackathon wins</span>
                 </li>
-                <li class="proof-item stack-proof">
-                    <strong>Python · C++</strong>
-                    <span>PyTorch · OpenCV · GenAI</span>
+                <li class="proof-item impact-proof accent-proof">
+                    <strong>Work impact</strong>
+                    <span><b>~87%</b> faster validation workflow</span>
+                    <span><b>+50%</b> detection precision</span>
+                    <span><b>+80%</b> inference-time improvement</span>
                 </li>
             </ul>
         </section>
@@ -134,7 +132,7 @@
                     <div class="case-copy">
                         <div class="case-meta"><span>01</span><span>Production Computer Vision</span></div>
                         <h3>Real-time sports tracking &amp; automatic camera control</h3>
-                        <p>Improved the core logic of a production system for live sports tracking and automatic camera control. Worked across detection, classification, trajectory prediction and smoothing to generate more stable and accurate camera movements.</p>
+                        <p>Improved the core logic of a production system for live sports tracking and automatic camera control. Worked across detection, classification, trajectory prediction, smoothing and runtime optimization to generate more stable and accurate camera movements, achieving <strong>+50% detection precision</strong> and <strong>+80% inference-time improvement</strong>.</p>
                         <div class="tag-list">
                             <span>Python</span><span>C++</span><span>PyTorch</span><span>OpenCV</span><span>Real-time video</span>
                         </div>
@@ -186,6 +184,48 @@
             </div>
         </section>
 
+        <section class="section" id="experience">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <div>
+                        <p class="section-kicker">Experience</p>
+                        <h2>From models to operated systems</h2>
+                    </div>
+                </div>
+
+                <div class="experience-layout">
+                    <article class="company-card reveal">
+                        <div class="company-summary">
+                            <span class="company-logo"><img src="assets/img/cinfo-logo.png" width="52" height="52" alt="CINFO logo" loading="lazy" decoding="async"></span>
+                            <div><h3>CINFO</h3><p>July 2024 · Present</p></div>
+                        </div>
+                        <p>Building and improving production AI systems across computer vision, automation and distributed GenAI infrastructure.</p>
+                    </article>
+                    <div class="role-timeline">
+                        <article class="role-item reveal">
+                            <span class="timeline-dot"></span>
+                            <div class="role-heading"><div><h3>GenAI &amp; Computer Vision Engineer</h3><p>Current role</p></div><time datetime="2026-03">Mar 2026 · Present</time></div>
+                            <ul><li>Engineer production GenAI and computer-vision systems from model integration to operated workflows.</li><li>Build distributed agent infrastructure and automation around real AI workloads.</li><li>Improve real-time video intelligence systems for reliability, accuracy and runtime performance.</li></ul>
+                        </article>
+                        <article class="role-item reveal">
+                            <span class="timeline-dot"></span>
+                            <div class="role-heading"><div><h3>AI &amp; Computer Vision Developer</h3><p>Promotion</p></div><span class="role-date"><time datetime="2025-09">Sep 2025</time> · <time datetime="2026-03">Mar 2026</time></span></div>
+                            <ul><li>Design and improve real-time sports tracking and automatic camera-control systems.</li><li>Build validation, monitoring and automation tooling around production algorithms.</li><li>Develop distributed infrastructure for parallel agent workflows and resilient execution.</li></ul>
+                        </article>
+                        <article class="role-item reveal">
+                            <span class="timeline-dot"></span>
+                            <div class="role-heading"><div><h3>AI Junior Developer</h3><p>Starting role</p></div><span class="role-date"><time datetime="2024-07">Jul 2024</time> · <time datetime="2025-09">Sep 2025</time></span></div>
+                            <p>Developed machine-learning models and computer-vision algorithms for applied business use cases, building the foundation for broader system ownership.</p>
+                        </article>
+                    </div>
+                </div>
+                <div class="education-row reveal">
+                    <div><span class="education-icon"><img src="assets/img/udc-logo.svg" width="46" height="46" alt="Universidade da Coruña logo" loading="lazy" decoding="async"></span><div><h3>BSc in Computer Engineering</h3><p>Computing specialization · Universidade da Coruña</p></div></div>
+                    <span class="education-date"><time datetime="2020">2020</time> · <time datetime="2024">2024</time></span>
+                </div>
+            </div>
+        </section>
+
         <section class="section projects-section" id="projects">
             <div class="container">
                 <div class="section-heading reveal">
@@ -214,22 +254,18 @@
 
                 <div class="project-grid">
                     <article class="project-card reveal">
-                        <div class="project-card-top">
-                            <span class="project-icon"><i class="fas fa-database" aria-hidden="true"></i></span>
-                            <span class="award-label">1st Prize · Denodo</span>
+                        <div class="localdeck-preview shelfpick-preview">
+                            <img src="assets/img/shelfpickva-demo.webp" width="560" height="375" loading="lazy" decoding="async" alt="ShelfPickVA bottle detection system showing live inference and interaction">
                         </div>
-                        <p class="project-number">Featured 02 · GenAI &amp; Data</p>
-                        <h3>Enterprise Data Assistant</h3>
-                        <p>LLM-assisted data workflow that interprets requests, infers schemas, generates VQL and automates imports across structured business data sources.</p>
-                        <div class="data-flow" role="img" aria-label="Enterprise data assistant architecture">
-                            <span>Request</span><i class="fas fa-arrow-right"></i><span>Gemini</span><i class="fas fa-arrow-right"></i><span>Denodo</span>
-                        </div>
-                        <div class="tag-list"><span>Python</span><span>Flask</span><span>Gemini</span><span>React</span><span>Docker</span></div>
-                        <a class="text-link" href="https://github.com/martinge17/HackUDC25-Denodo" target="_blank" rel="noopener noreferrer">Explore repository <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                        <p class="project-number">Featured 02 · Computer Vision</p>
+                        <h3>ShelfPickVA</h3>
+                        <p>Computer vision system for bottle detection and shelf interaction, combining YOLO inference with ROI configuration and a lightweight visual workflow.</p>
+                        <div class="tag-list"><span>Python</span><span>YOLO</span><span>OpenCV</span><span>ROI configuration</span></div>
+                        <a class="text-link" href="https://github.com/manuamest/ShelfPickVA" target="_blank" rel="noopener noreferrer">Explore repository <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                     </article>
                     <article class="project-card reveal">
                         <div class="localdeck-preview">
-                            <img src="assets/img/localdeck-demo.gif" width="1200" height="731" loading="lazy" decoding="async" alt="Localdeck dashboard discovering and monitoring local web services">
+                            <img src="assets/img/localdeck-demo.webp" width="760" height="463" loading="lazy" decoding="async" alt="Localdeck dashboard discovering and monitoring local web services">
                         </div>
                         <p class="project-number">Featured 03 · Developer Tools</p>
                         <h3>Localdeck</h3>
@@ -245,47 +281,10 @@
                         <h3>More things I have built</h3>
                     </div>
                     <div class="other-links">
-                        <a href="https://github.com/manuamest/ShelfPickVA" target="_blank" rel="noopener noreferrer"><span>ShelfPickVA</span><small>YOLO · ROI configuration</small><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
-                        <a href="https://ruc.udc.es/dspace/handle/2183/39622" target="_blank" rel="noopener noreferrer"><span>Medical AR Viewer</span><small>HoloLens 2 · Unity · DICOM</small><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                        <a href="https://github.com/martinge17/HackUDC25-Denodo" target="_blank" rel="noopener noreferrer"><span>Enterprise Data Assistant</span><small>1st Prize · Denodo</small><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                        <a href="https://ruc.udc.es/entities/publication/1bef7b9a-cd0a-40d1-aa6f-d2bc0f43f420" target="_blank" rel="noopener noreferrer"><span>Medical AR Viewer</span><small>HoloLens 2 · Unity · DICOM</small><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                         <a href="https://github.com/manuamest/SoccerImgDetector" target="_blank" rel="noopener noreferrer"><span>SoccerImgDetector</span><small>OpenCV · Classical CV</small><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="experience">
-            <div class="container">
-                <div class="section-heading reveal">
-                    <div>
-                        <p class="section-kicker">Experience</p>
-                        <h2>From models to operated systems</h2>
-                    </div>
-                </div>
-
-                <div class="experience-layout">
-                    <article class="company-card reveal">
-                        <div class="company-summary">
-                            <span class="company-logo">C</span>
-                            <div><h3>CINFO</h3><p>July 2024 · Present</p></div>
-                        </div>
-                        <p>Building and improving production AI systems across computer vision, automation and distributed GenAI infrastructure.</p>
-                    </article>
-                    <div class="role-timeline">
-                        <article class="role-item reveal">
-                            <span class="timeline-dot"></span>
-                            <div class="role-heading"><div><h3>AI &amp; Computer Vision Developer</h3><p>Promotion</p></div><time datetime="2025-09">Sep 2025 · Present</time></div>
-                            <ul><li>Design and improve real-time sports tracking and automatic camera-control systems.</li><li>Build validation, monitoring and automation tooling around production algorithms.</li><li>Develop distributed infrastructure for parallel agent workflows and resilient execution.</li></ul>
-                        </article>
-                        <article class="role-item reveal">
-                            <span class="timeline-dot"></span>
-                            <div class="role-heading"><div><h3>AI Junior Developer</h3><p>Starting role</p></div><span class="role-date"><time datetime="2024-07">Jul 2024</time> · <time datetime="2025-09">Sep 2025</time></span></div>
-                            <p>Developed machine-learning models and computer-vision algorithms for applied business use cases, building the foundation for broader system ownership.</p>
-                        </article>
-                    </div>
-                </div>
-                <div class="education-row reveal">
-                    <div><span class="education-icon"><i class="fas fa-graduation-cap" aria-hidden="true"></i></span><div><h3>BSc in Computer Engineering</h3><p>Computing specialization · Universidade da Coruña</p></div></div>
-                    <span class="education-date"><time datetime="2020">2020</time> · <time datetime="2024">2024</time></span>
                 </div>
             </div>
         </section>
