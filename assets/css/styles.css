@@ -1001,6 +1001,11 @@ header nav a.active::after {
     font-size: 1rem;
 }
 
+.impact-stack {
+    display: grid;
+    gap: 6px;
+}
+
 .agent-visual,
 .data-flow,
 .mini-flow {
