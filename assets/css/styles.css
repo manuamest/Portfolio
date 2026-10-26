@@ -1551,7 +1551,7 @@ header nav a.active::after {
 
 .achievement-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
 }
 
@@ -1611,6 +1611,11 @@ header nav a.active::after {
     background-position: 50% 46%;
 }
 
+.achievement-hackspain {
+    background-image: url("../img/hackspain.webp");
+    background-position: 50% 50%;
+}
+
 .light-theme .achievement-card {
     color: #f8fbff;
     box-shadow: 0 24px 70px rgba(32, 62, 99, 0.18), inset 0 0 0 1px rgba(255, 255, 255, 0.2);
@@ -1626,6 +1631,12 @@ header nav a.active::after {
     background-color: #09111f;
     background-image: url("../img/denodo.webp");
     background-position: 50% 46%;
+}
+
+.light-theme .achievement-hackspain {
+    background-color: #09111f;
+    background-image: url("../img/hackspain.webp");
+    background-position: 50% 50%;
 }
 
 .light-theme .achievement-card::after {
@@ -1891,6 +1902,14 @@ footer {
 
     .capability-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .achievement-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .achievement-hackspain {
+        grid-column: 1 / -1;
     }
 }
 
